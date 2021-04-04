@@ -1,2 +1,7 @@
 server:
-  port: 9090
+  ssl:
+    key-alias: https-example
+    key-store-type: JKS
+    key-store: classpath:https-example.jks
+    key-password: password
+    enabled: true
