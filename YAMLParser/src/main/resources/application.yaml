@@ -1,0 +1,18 @@
+yamlproject:
+  meta:
+    name: YAMLConfig
+    createdBy: Vijay Tolani
+  contributors:
+    - Vijay Tolani
+    - PlaceHolder 1
+    - PlaceHolder 2
+  accountHolders: 
+    - holderName: Vijay 
+      acccountType: Savings
+      accountId: 1
+      bankName: ICICI
+    - holderName: Pia 
+      acccountType: Current
+      accountId: 2
+      bankName: HDFC
+      

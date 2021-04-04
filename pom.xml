@@ -19,5 +19,6 @@
 	</dependencies>
 	<modules>
 		<module>HttpsExample</module>
+		<module>YAMLParser</module>
 	</modules>
 </project>
