@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: caller-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: callerservice
+  template:
+    metadata:
+      labels:
+        app: callerservice
+    spec:
+      containers:
+        - name: callerservice
+          image: callerservice:latest
+          ports:
+            - containerPort: 9090
+          imagePullPolicy: IfNotPresent
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: callerservice
+spec:
+  selector:
+    app: callerservice
+  ports:
+    - port: 8080
+      targetPort: 9090
+  type: NodePort

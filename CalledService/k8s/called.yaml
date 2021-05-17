@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: called-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: calledservice
+  template:
+    metadata:
+      labels:
+        app: calledservice
+    spec:
+      containers:
+        - name: calledservice
+          image: calledservice:latest
+          ports:
+            - containerPort: 9090
+          imagePullPolicy: IfNotPresent
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: calledservice
+spec:
+  selector:
+    app: calledservice
+  ports:
+    - port: 80
+      targetPort: 9090
+  type: ClusterIP

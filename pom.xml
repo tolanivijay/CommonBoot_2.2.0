@@ -20,5 +20,7 @@
 	<modules>
 		<module>HttpsExample</module>
 		<module>YAMLParser</module>
+		<module>CallerService</module>
+		<module>CalledService</module>
 	</modules>
 </project>
