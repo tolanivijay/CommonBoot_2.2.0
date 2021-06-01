@@ -22,5 +22,6 @@
 		<module>YAMLParser</module>
 		<module>CallerService</module>
 		<module>CalledService</module>
+		<module>ExceptionHandler</module>
 	</modules>
 </project>
