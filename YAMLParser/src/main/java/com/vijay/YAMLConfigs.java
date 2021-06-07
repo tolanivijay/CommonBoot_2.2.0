@@ -15,15 +15,11 @@ public class YAMLConfigs {
 	private List<String> contributors;
 	
 	private List<AccountDetails> accountHolders;
+	
+	private Map<Integer,Boolean> activecheck;
 
 	public Map<String, String> getMeta() {
 		return meta;
-	}
-
-	@Override
-	public String toString() {
-		return "YAMLConfigs [meta=" + meta + ", contributors=" + contributors + ", accountHolders=" + accountHolders
-				+ "]";
 	}
 
 	public void setMeta(Map<String, String> meta) {
@@ -44,6 +40,22 @@ public class YAMLConfigs {
 
 	public void setAccountHolders(List<AccountDetails> accountHolders) {
 		this.accountHolders = accountHolders;
+	}
+
+	public Map<Integer, Boolean> getActivecheck() {
+		return activecheck;
+	}
+
+	public void setActivecheck(Map<Integer, Boolean> activecheck) {
+		this.activecheck = activecheck;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "YAMLConfigs [meta=" + meta + ", contributors=" + contributors + ", accountHolders=" + accountHolders
+				+ ", activecheck=" + activecheck + "]";
 	}
 
 	

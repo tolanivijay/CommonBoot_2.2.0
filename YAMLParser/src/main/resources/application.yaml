@@ -15,4 +15,8 @@ yamlproject:
       acccountType: Current
       accountId: 2
       bankName: HDFC
+  activecheck:
+    1: true
+    2: false
+    3: true
       
