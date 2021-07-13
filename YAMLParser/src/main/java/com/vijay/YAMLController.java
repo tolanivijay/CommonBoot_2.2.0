@@ -10,8 +10,12 @@ public class YAMLController {
 	@Autowired
 	private YAMLConfigs configs;
 	
-	@GetMapping("/configs")
+	@Autowired
+	private YAMlWriter writer;
+	
+	@GetMapping
 	public String getConfigs() {
+		writer.writeToDisk();
 		return configs.toString();
 	}
 	

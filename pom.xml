@@ -23,5 +23,7 @@
 		<module>CallerService</module>
 		<module>CalledService</module>
 		<module>ExceptionHandler</module>
+		<module>SpringSecurityDemo</module>
+		<module>SpringDataPostgress</module>
 	</modules>
 </project>
