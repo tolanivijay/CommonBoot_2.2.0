@@ -16,6 +16,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<modules>
 		<module>HttpsExample</module>
@@ -25,5 +30,6 @@
 		<module>ExceptionHandler</module>
 		<module>SpringSecurityDemo</module>
 		<module>SpringDataPostgress</module>
+		<module>JunitWork</module>
 	</modules>
 </project>
