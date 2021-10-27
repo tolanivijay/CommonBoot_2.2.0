@@ -31,5 +31,6 @@
 		<module>SpringSecurityDemo</module>
 		<module>SpringDataPostgress</module>
 		<module>JunitWork</module>
+		<module>OpenCsvWork</module>
 	</modules>
 </project>
